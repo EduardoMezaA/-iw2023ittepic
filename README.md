@@ -54,6 +54,8 @@ touch 1.txt
 ## Crear un tag v0.1
 git tag -a v0.1 -m "Version 0.1"
 
+git push origin v0.1
+
 git tag
 
 ![5](https://github.com/EduardoMezaA/-iw2023ittepic/assets/127335310/a5640ca7-47ce-42c4-9031-b57c61fb74cc)
@@ -161,10 +163,13 @@ git commit -m "1.txt conflicto resuelto"
 
 git tag -a v0.2
 
+git push origin v0.2
 
 ### Borrar la rama v0.2
 
 git branch -d v0.2
+
+git push origin --delete v0.2
 
 ## Listar los distintos commits con sus ramas y sus tags
 
