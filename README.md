@@ -89,3 +89,83 @@ git push -u origin main
 
 ![7](https://github.com/EduardoMezaA/-iw2023ittepic/assets/127335310/69d0c628-3696-410c-9726-90233d4054e2)
 
+
+
+# PARTE 2
+
+## Crear una rama v0.2 y posicionarse
+
+git checkout -b v0.2
+
+
+## Añadir archivo 2.txt en la rama v0.2
+
+touch 2.txt
+
+
+## Subir los cambios al repositorio remoto
+
+git add 2.txt
+
+git commit -m "Segundo archivo txt"
+
+git push origin v0.2
+
+
+## Posicionarse en la rama master. Hacer un merge de la rama v0.2 en la rama master
+
+git checkout main
+
+git merge v0.2
+
+git push
+
+## Merge con conflicto
+
+git add 1.txt
+
+git commit -m "1.txt mod"
+
+
+### Posicionarse en la rama v0.2 y poner Adiós en el archivo 1.txt y hacer commit
+
+git checkout v0.2
+
+git add 1.txt
+
+git commit -m "1.txt yeet"
+
+
+### Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2
+
+git checkout main
+
+git merge v0.2
+
+
+### Listar las ramas con merge y las ramas sin merge
+
+git branch --merged
+
+git branch --no-merged
+
+### Arreglar conflicto anterior y hacer un commit
+
+imagenxd
+
+git add 1.txt
+
+git commit -m "1.txt conflicto resuelto"
+
+### Crear un tag v0.2
+
+git tag -a v0.2
+
+
+### Borrar la rama v0.2
+
+git branch -d v0.2
+
+## Listar los distintos commits con sus ramas y sus tags
+
+git log --all --decorate --oneline --graph
