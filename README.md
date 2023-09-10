@@ -104,6 +104,8 @@ git checkout -b v0.2
 
 touch 2.txt
 
+![21](https://github.com/EduardoMezaA/-iw2023ittepic/assets/127335310/56ad169b-4476-48e5-94a3-95c5df824c78)
+
 
 ## Subir los cambios al repositorio remoto
 
@@ -112,6 +114,8 @@ git add 2.txt
 git commit -m "Segundo archivo txt"
 
 git push origin v0.2
+
+![22](https://github.com/EduardoMezaA/-iw2023ittepic/assets/127335310/c12b29a6-3127-4d68-a69d-f5941b02f3e0)
 
 
 ## Posicionarse en la rama master. Hacer un merge de la rama v0.2 en la rama master
@@ -174,3 +178,6 @@ git push origin --delete v0.2
 ## Listar los distintos commits con sus ramas y sus tags
 
 git log --all --decorate --oneline --graph
+
+![image](https://github.com/EduardoMezaA/-iw2023ittepic/assets/127335310/46dafa91-73c6-4fe1-885c-d870cf32bbe6)
+
